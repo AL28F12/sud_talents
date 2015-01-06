@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/Tema1.min.css">
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center"><img src="imagenes/MORONI1.png" width="178" height="227">
+    </div>
+   
+	<audio id="roar" preload="auto" src="audio/Be My Forever - Christina Perri ft. Ed Sheeran.mp3">
+      </audio>
+    </div>
+    
+
+</div>
+
+
+    
+        <div data-role="page" id="principal" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>BIENVENIDO</h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="myapp-rex" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+        
+	</div>
+    
+      
+
+
+     
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:95%; height:80%;" align="justify">
+      <p> Hola, la Presidencia de Hombres y Mujeres Jóvenes de Estaca en coordinación con las presidencia de los barrios, han pensado en estos talleres para ti, y deseamos que seas parte de ellos, a este programa lo hemos denominado. "Sud Talent's."
+       </p>
+       <p>
+¿Qué es Sud Talent's? 
+Son talleres impartidos por especialistas miembros de la Iglesia para los Hombres y Mujeres jóvenes de la Estaca, miembros y no miembros, con el fin de que puedan adquirir o desarrollar un talento y posteriormente compartirlo.
+</p>
+<p>
+En esta aplicación encontraras información valiosa que te ayudara a comprender este programa, gracias por descargarla.
+<br>
+<br>
+“…Si hay algo virtuoso, bello, de buena reputación o digno de alabanza, a esto aspiramos” (Artículo de Fe No. 13)
+
+      </p>
+      <div align="center"><img src="imagenes/logo2.png" width="354" height="312"></div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+
+	</div>
+    
+<!-- Panel Menu  -->
+  <div data-role="panel" id="defaultpanel" data-theme="a" data-display="overlay">
+ 
+    <div class="panel-content" align="center">
+      <h3>Menú</h3>
+
+<img src="imagenes/logo2.png" width="170" height="160">
+<div data-role="controlgroup">
+<a data-role="button" id="Denon" class="boton">Mensaje Pdte. Terrón</a>
+<a data-role="button" id="Numark" class="boton">Talleres</a> 
+<a data-role="button" id="Piooner" class="boton">Requisitos</a>
+<a data-role="button" id="peavey" class="boton">Hacia los padres</a>
+<a data-role="button" id="acercade" class="boton">Acerca de</a>
+</div>
+
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+    </div><!-- /contenido del panel-->
+  </div><!-- /panel de menu -->
+    
+    
+</div>
+
+<div data-role="page" id="Denon" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Bienvenida Pdte. Terrón</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:95%; height:80%;" align="justify">
+    <p>
+     Estimados jóvenes:
+     <br>
+     <br>
+Estamos viviendo los tiempos peligrosos que los Profetas predijeron, el adversario también está acelerando su obra, sin embargó sabemos que tal como el Salvador lo prometió el Plan de señor se realizará y su obra no se frustrara.
+<br>
+<br>
+Es una bendición tener Profetas vivientes que nos guían y saber qué es lo que debemos hacer para no perdernos, recientemente el Elder L. Tom Perry. Dijo refiriéndose a la juventud: Satanás tiene su enfoque en ustedes e invito a los líderes a mantenerlos ocupados, es por ello, que siguiendo esa admonición deseamos que participen en estas actividades que hemos planeado, las cuales les ayudaran a desarrollar sus talentos y mantenerse en lugares santos.<br>
+<br>
+Les amamos y deseamos apoyarles en su desarrollo, les prometemos que si participan serán bendecidos.
+
+    </p>	
+    <div align="center"><img src="imagenes/PdteTerron.jpg" width="209" height="266"></div>
+	</div>
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="Numark" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1>Talleres</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:95%; height:80%;" align="justify">
+    <p>
+DANZA FOLKLORICA:
+<br>
+<br>
+Especialista: Cristina Ramos Lezama Barrio Independencia (Enero - Febrero) Región Yucatán
+<br>
+Inicio de taller Viernes 9 de enero de 5:00 a 7:00 pm
+<br>
+<br>
+Especialista: Isaías Ramos Lezama Barrio Revolución (Marzo – Abril) Región Nayarit
+<br>
+Inicio de taller Miércoles 4 de Marzo de 6:00 a 8:00 pm
+<br>
+<br>
+Especialista: Eréndira Escalante Barrio Metepec (Mayo - Junio) Región Tamaulipas
+<br>
+Inicio de taller Viernes 1 de Mayo de 6:00  a 8:00 pm
+<br>
+<br>
+<div align="center"><img src="imagenes/DANZA COLOMBIANA[1].jpg" width="338" height="267"></div>
+<br>
+GUITARRA:
+<br>
+<br>
+Especialista: Michael Romero Campos Barrio Independencia (Enero - Junio)
+<br>
+Especialista: Fernando Barrio Madero (Enero - Junio)
+<br>
+Especialista: Adán Cholula Varela
+<br>
+<br>
+Inicio de taller Miércoles 7 de enero de 6:00 a 8:00 pm
+<br>
+<br>
+    <div align="center"><img src="imagenes/guitarra_acustica.jpg" width="333" height="229">
+</div>
+<br>
+CANTO:
+<br>
+<br>
+Especialista: Raquel Ramos Escobar Barrio Revolución
+<br>
+Especialista: Adriana Terrón Ramos Barrio Independencia
+<br>
+Especialista: Carolina Gutiérrez Barrio Independencia
+<br>
+<br>
+Inicio de taller Miércoles 7 de Enero de 6:30 a 8:00 pm
+<br>
+<br>
+<div align="center"><img src="imagenes/canto.jpg" width="331" height="229">
+</div>
+    </p>	
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="Piooner" data-theme="b">
+	<div data-role="header" data-position="fixed">
+		<h1>Requisitos</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:95%; height:80%;" align="justify">
+    <p>
+* Estar Trabajando en el Progreso Personal y Mi deber a Dios
+<br>
+* Asistir a seminario (solo para jóvenes en edad)
+<br>
+* Contar con la autorización de Tus Padres y Líderes
+<br>
+* Ser responsable
+    </p>
+    <div align="center"><img src="imagenes/manuales.png" width="358" height="286"></div>
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+<div data-role="page" id="peavey" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1>Nuestra Preocupación</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:95%; height:80%;" align="justify">
+    <p>
+Debido a la preocupación que se tiene con los jóvenes y por todas las cosas que están sucediendo a su alrededor, es necesario ayudarles a mantenerlos ocupados, ya que Satanás esta al acecho de ustedes, ahora estamos en guerra, ya no de armas, ni de cosas valiosas, esta es una guerra de pensamientos, actos y palabras, y no debemos dejar que sus amigos los influencien, sino ayudarles a buscar al señor en todo momento.
+<br>
+<br>
+Elder L. Tom Perry
+<br>
+<br>
+Porque tú eres muy importante para nosotros y te amamos, pensamos en esto para ti
+<br>
+Con cariño Presidencia de Hombres y Mujeres Jóvenes de Estaca Atlixco.
+<br>
+<br>
+Para mayor información acércate con las presidencias de Hombres y Mujeres Jóvenes de Estaca.
+
+    </p>	
+    <div align="center">
+    <img src="imagenes/jovenessombra-inc.png" width="396" height="249">
+    <br>
+    <br>
+    <img src="imagenes/IMG_20141203_200032.jpg" width="396" height="275">
+    <br><img src="imagenes/IMG_20141203_195841.jpg" width="396" height="275">
+    </div>
+	</div>
+    </div>
+</div>
+
+<div data-role="page" id="acercade" data-theme="c">
+	<div data-role="header" data-position="fixed">
+		<h1>Acerca De</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">
+    <div style="margin: 0 auto 0 auto; width:95%; height:80%;" align="center">
+    <p>
+Ingenieria:
+Elaborado especialmente para Talent Sud
+<br>
+<br>
+Dise&ntilde;o de Producto y Marketing:
+Erick Yamil Popoca Ramos
+<br>
+<br>
+Redaccion:
+Presidencia de Hombres y Mujeres Jovenes de Estaca
+<br>
+<br>
+Administracion documental:
+Basado en informacion de La Iglesia de Jesucristo de los Santos de los Ultimos Dias
+<br>
+<br>
+Version de la APK:
+TalentSud 1.1.0
+    </p>	
+    <div align="center"><img src="imagenes/musica-android.png" width="320" height="247">
+    </div>
+	</div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+
+		
+	</div>
+</div>
+
+
+    </body>
+
+</html>
